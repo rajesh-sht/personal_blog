@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="row">
+    <div class="post">
+        <!-- only display post if published  -->
+        {% if post.published_at %}
+        <div class="post-date mt-4">
+            {{post.published_at}}
+        </div>
+        {% else %}
+        {% if user.is_authenticated %}
+        <a href="{% url 'post-publish' post.id %}" class="btn btn-success mt-3">Publish</a>
+
+        {% endif %}
+        {% endif %}
+        <h1 class="post-title">{{post.title}}</h1>
+        {% if user.is_authenticated %}
+        <a href="{% url 'post-edit' post.id %}" class="btn btn-primary">Edit</a>
+        <a href="{% url 'post-delete' post.id %}" class="btn btn-danger">Delete</a>
+        {% endif %}
+        </h1>
+        <div class="post-content">
+            <p>{{post.content|linebreaksbr}}</p>
+        </div>
+    </div>
+</div>
+{% endblock content %}

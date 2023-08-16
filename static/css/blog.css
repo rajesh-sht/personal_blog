@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.logo:hover {
+    filter: drop-shadow(0px 0px 10px rgb(255, 124, 2));
+}
+
+.container-fluid {
+    box-shadow: 0 0 10px rgb(104, 44, 44);
+    z-index: 1;
+}
+
+.container-fluids {
+    /* border: 1px solid black; */
+    margin: auto;
+    width: 97%;
+    margin-top: 10px;
+    box-shadow: 0 0 10px rgb(104, 44, 44);
+    padding: 10px;
+    margin-bottom: 15px;
+    /* overflow: auto; */
+
+}
+
+.menu {
+    float: right;
+    text-align: center;
+    text-decoration: none;
+    margin-right: 65px;
+    color: rgb(224, 111, 6);
+
+}
+
+.menu:hover {
+    box-shadow: 0 0 10px rgb(226, 89, 10);
+    border-radius: 10px;
+}
+
+.menu .lg-icons {
+    font-size: 50px;
+    /* text-align: center; */
+}
+
+.login-form {
+    width: 50%;
+    margin: auto;
+    margin-top: 5%;
+    border-style: outset;
+    padding: 20px;
+    margin-bottom: 100px;
+}
+
+.top-menu {
+    background-color: rgb(240, 233, 225);
+    padding: 15px;
+    /* height: 70px; */
+}
+
+.brand-logo {
+    margin-left: 50px;
+}
+
+.post-content {
+    margin-top: 10px;
+    text-align: justify;
+}
+
+.post-date {
+    color: rgb(173, 9, 9);
+    margin-top: 20px;
+}
+
+.post-form textarea,
+input {
+    margin-top: 25px;
+    width: 100%;
+    background-color: antiquewhite;
+}
+
+.post-title {
+    font-family: Georgia, serif;
+}
